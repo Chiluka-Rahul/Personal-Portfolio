@@ -122,7 +122,7 @@ const Home = () => {
 
   return (
     <>
-        <Block />
+        {/* <Block /> */}
         <div className='content-1'>
           <Nav />
           <section className="home-container">

@@ -51,14 +51,15 @@
 .list-container{
     display: flex;
     position: relative;
-    .list-items{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+}
+.list-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .list{
+.list{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -97,7 +98,7 @@
         text-transform: uppercase;
         color: rgb(9, 9, 9)
     }
-}
+
 
 
 
