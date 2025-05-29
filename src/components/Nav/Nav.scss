@@ -10,105 +10,113 @@
     z-index: 3;
     border: 1px solid rgb(154, 153, 153);
 
-  }
-  
-  .nav-side-container {
+}
+
+.nav-side-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 10px;
     gap: 10px;
-    /* background-color: black; */
     padding: 4px 8px;
     border-radius: 18px;
-  }
-  
-  .square {
+}
+
+.square {
     margin-left: 2px;
     width: 9px;
     height: 9px;
     border-radius: 50%;
     background-color: rgb(40, 255, 6);
     animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
+}
 
-  @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-      opacity: .5;
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: .5;
     }
+
     50% {
-      transform: scale(1.5);
-      opacity: 1;
+        transform: scale(1.5);
+        opacity: 1;
     }
-  }
-
-
-  
+}
 
 
 
-.list-container{
+
+
+
+.list-container {
     display: flex;
     position: relative;
 }
-.list-items{
+
+.list-items {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.list{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        position: relative;
-        font-size: 14px;
-        border-right: 1px solid rgb(189, 189, 189);
-        border-left: 1px solid rgb(189, 189, 189);
-        height: auto;
-        padding: 10px 35px 10px 35px;
-        cursor: pointer;
-        transition: all 0.5s ease-in-out;
-        pointer-events: auto;
-        &:hover{
-            background-color: rgb(0, 0, 0);
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    font-size: 14px;
+    border-right: 1px solid rgb(189, 189, 189);
+    border-left: 1px solid rgb(189, 189, 189);
+    height: auto;
+    padding: 10px 35px 10px 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    pointer-events: auto;
 
-            .list-square{
-                background-color: rgb(255, 255, 255);
-                transform: scale(1);
-                display: block;
-            }
-            a{
-                color: rgb(255, 255, 255);
-            }
+    &:hover {
+        background-color: rgb(0, 0, 0);
+
+        .list-square {
+            background-color: rgb(255, 255, 255);
+            transform: scale(1);
+            display: block;
         }
-        .list-square{
-            width: 8px;
-            height: 8px;
-            background-color: rgb(255, 251, 251);
-            transform: scale(0) translateX(-50%);
-            transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+
+        a {
+            color: rgb(255, 255, 255);
         }
     }
-    .list a{
-        text-decoration: none;
-        text-transform: uppercase;
-        color: rgb(9, 9, 9)
+
+    .list-square {
+        width: 8px;
+        height: 8px;
+        background-color: rgb(255, 251, 251);
+        transform: scale(0) translateX(-50%);
+        transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
     }
+}
+
+.list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(9, 9, 9)
+}
 
 
 
 
-.headerButtonContainer{
-    transform: scale(0);
+.headerButtonContainer {
+    transform: scale(1);
     position: fixed;
     right: 0px;
     z-index: 1000;
     pointer-events: auto;
-    .button{
+
+    .button {
         position: relative;
         margin: 10px;
         width: 80px;
@@ -121,11 +129,14 @@
         align-items: center;
         justify-content: center;
     }
-    .burger{
+
+    .burger {
         width: 100%;
         position: relative;
         z-index: 1;
-        &::after, &::before{
+
+        &::after,
+        &::before {
             content: "";
             display: block;
             height: 1.5px;
@@ -135,19 +146,23 @@
             position: relative;
             transition: transform 0.3s;
         }
-        &::after{
+
+        &::after {
             top: -2px;
         }
-        &::before{
+
+        &::before {
             top: 5px;
         }
     }
-    .burgerActive{
-        &::after{
+
+    .burgerActive {
+        &::after {
             transform: rotate(45deg);
             top: -1px;
         }
-        &::before{
+
+        &::before {
             transform: rotate(-45deg);
             top: 0px;
         }
@@ -156,7 +171,7 @@
 
 
 @media (max-width: 480px) {
-    .nav-container{
+    .nav-container {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -168,41 +183,46 @@
         top: 0;
         z-index: 3;
     }
-    .nav-side-container{
+
+    .nav-side-container {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-left: 10px;
         margin-top: 10px;
+
         .square {
             width: 6px;
             height: 6px;
             background-color: rgb(31, 255, 11);
-          }
-          
-          .rotating-text div{
+        }
+
+        .rotating-text div {
             font-size: 10px;
             color: white;
             text-transform: uppercase;
             font-family: 'Work Sans', sans-serif;
-          }
+        }
     }
-    .list-container{
+
+    .list-container {
         display: flex;
         flex-direction: column;
         position: relative;
-        .list-items{
+
+        .list-items {
             list-style: none;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             justify-content: flex-end;
-            a{
+
+            a {
                 pointer-events: all;
             }
         }
-    
-        .list{
+
+        .list {
             gap: 10px;
             font-size: 12px;
             margin-right: 0px;
@@ -210,19 +230,22 @@
             padding: 5px 10px;
             cursor: pointer;
             transition: all 0.5s ease-in-out;
-            &:hover{
+
+            &:hover {
                 background-color: rgb(255, 255, 255);
-    
-                .list-square{
+
+                .list-square {
                     background-color: rgb(0, 0, 0);
                     transform: scale(1);
                     display: block;
                 }
-                a{
+
+                a {
                     color: rgb(0, 0, 0);
                 }
             }
-            .list-square{
+
+            .list-square {
                 width: 8px;
                 height: 8px;
                 background-color: black;
@@ -230,11 +253,12 @@
                 transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
             }
         }
-        .list a{
+
+        .list a {
             text-decoration: none;
             text-transform: uppercase;
         }
     }
-    
-    
+
+
 }
