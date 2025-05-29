@@ -11,6 +11,7 @@
   overscroll-behavior: none;
 }
 
-body{
-  overflow: hidden;
+body {
+  overflow-x: hidden;  /* prevent horizontal scroll */
+  overflow-y: auto;    /* allow vertical scrolling */
 }
