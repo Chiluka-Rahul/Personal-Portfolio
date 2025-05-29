@@ -19,6 +19,7 @@ const Nav = () => {
     }, [pathname])
 
     useLayoutEffect( () => {
+      if (!button.current) return;
         gsap.registerPlugin(ScrollTrigger)
         gsap.to(button.current, {
             scrollTrigger: {
