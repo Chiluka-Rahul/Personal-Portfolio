@@ -1,0 +1,28 @@
+.link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    .indicator{
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        position: absolute;
+        left: -35px;
+    }
+    .bright{
+        color: white;
+        font-weight: 320;
+    }
+    .light{
+        color: rgb(159, 158, 158);
+    }
+    .indicatorr{
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        position: absolute;
+        right: -35px;
+    }
+
+}

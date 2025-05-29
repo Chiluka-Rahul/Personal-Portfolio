@@ -1,0 +1,85 @@
+.filterbuttons {
+  border-top: 2px solid rgb(182, 182, 182);
+  border-bottom: 2px solid rgb(182, 182, 182);
+  font-family: 'Inter', sans-serif;
+}
+
+.tab-container {
+  position: relative;
+  display: flex;
+  padding: 5px 5px 5px 25px;
+  border-radius: 1000px;
+  background-color: white;
+  gap: 20px;
+}
+
+.tab {
+  position: relative;
+  z-index: 10;
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+}
+
+.tab.active {
+  color: rgb(236, 255, 27); 
+  font-style: italic;
+  border-radius: 5px; 
+}
+
+.cursor {
+  position: absolute;
+  z-index: 0;
+  height: 40px;
+  bottom: 3.5px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+
+@media (max-width:480px) {
+  .filterbuttons {
+    border-top: 2px solid rgb(206, 206, 206);
+    border-bottom: 2px solid rgb(227, 227, 227);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .tab-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 1000px;
+    background-color: white;
+    gap: 5px;
+  }
+  
+  .tab {
+    position: relative;
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(81, 81, 81);
+    mix-blend-mode:normal;
+  }
+  
+  .tab.active {
+    color: rgb(0, 0, 0); 
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px; 
+  }
+  
+  .cursor {
+    display: none;
+  }
+  
+}

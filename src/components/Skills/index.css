@@ -1,0 +1,37 @@
+#skills_container{
+    min-height: 100vh;
+    width: 100%;
+  transition: background-color 0.3s;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 5rem;
+
+}
+
+.skills_sticky{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+
+@media (max-width: 480px) {
+  #skills_container{
+    min-height: 55vh;
+    width: 100%;
+    transition: background-color 0.3s;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px){
+  #skills_container{
+    min-height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+}

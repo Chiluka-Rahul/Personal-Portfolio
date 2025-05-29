@@ -1,0 +1,48 @@
+.multi-animate {
+    margin-top: 2px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
+
+}
+.multi-animate span {
+    /* background-color: rgb(0, 0, 0); */
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    line-height: 22px;
+    display: none;
+}
+
+.multi-animate span.text-in {
+    
+    display: block;
+    animation: textIn 0.5s ease forwards; 
+}
+
+.multi-animate span.text-out {
+    animation: textOut 0.5s ease forwards;
+}
+
+@keyframes textIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes textOut {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
