@@ -116,8 +116,10 @@ a{
   position: absolute;
   left: 50%;
   font-size: 0.7rem;
+  font-family: 'Inter', sans-serif;
   text-transform: uppercase;
   transform-origin: 0 50px; 
+  white-space: pre;
 }
 
 @keyframes anim {
