@@ -110,7 +110,7 @@
 
 
 .headerButtonContainer {
-    transform: scale(1);
+    transform: scale(0);
     position: fixed;
     right: 0px;
     z-index: 1000;
@@ -148,7 +148,7 @@
         }
 
         &::after {
-            top: -2px;
+            top: -5px;
         }
 
         &::before {
