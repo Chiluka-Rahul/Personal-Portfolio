@@ -113,12 +113,16 @@ const Home = () => {
   }, []);
   
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const text = document.querySelector('.text-cont-resume p');
-    text.innerHTML = text.innerText.split("").map((char, i) =>
-      `<span style="transform:rotate(${i * 8.5}deg)">${char}</span>`
+    const chars = text.innerText.split("");
+    const degreePerChar = 360 / chars.length;
+
+    text.innerHTML = chars.map((char, i) =>
+      `<span style="transform:rotate(${i * degreePerChar}deg)">${char}</span>`
     ).join("");
   }, []);
+
 
   return (
     <>
