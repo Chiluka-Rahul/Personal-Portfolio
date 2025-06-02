@@ -33,11 +33,16 @@ const SkillList = [
     category: "FrontEnd",
     icon: "bootstrap.png",
   },
-  // {
-  //   name: "TailwindCSS",
-  //   category: "FrontEnd",
-  //   icon: "tailwindcss.png",
-  // },
+  {
+    name: "AWS",
+    category: "Database",
+    icon: "aws.png",
+  },
+  {
+    name: "C++",
+    category: "language",
+    icon: "c++.png",
+  },
   {
     name: "ReactJS",
     category: "library & Frameworks",

@@ -91,14 +91,21 @@ const Home = () => {
         return;
       }
 
+      const strongWords = ["GREAT"];
+
       const newString = itemText
-        .split("")
-        .map((char) =>
-          char === " "
-            ? `<span class="gap">&nbsp;</span>`
-            : `<span class="spann">${char}</span>`
-        )
+        .split(" ")
+        .map(word => {
+          const isStrong = strongWords.includes(word.replace(/[^\w]/g, ""));
+          return word.split("").map(char => {
+            const spanClass = `spann${isStrong ? ' strong' : ''}`;
+            return char === " " 
+              ? `<span class="gap">&nbsp;</span>` 
+              : `<span class="${spanClass}">${char}</span>`;
+          }).join("") + `<span class="gap">&nbsp;</span>`; // add space between words
+        })
         .join("");
+
 
         setTimeout(() => {
           requestAnimationFrame(() => {
@@ -130,22 +137,23 @@ const Home = () => {
         <div className='content-1'>
           <Nav />
           <section className="home-container">
-          {/* <video 
+          <video 
             className="video-bg-bg" 
             src="https://framerusercontent.com/assets/J374OfA0ykvehAcL9mdNIaWQv5g.mp4" 
             autoPlay 
             loop 
             muted 
             playsInline
-          ></video> */}
+          ></video>
             <div className="inner-container">
               <div className='title-home-container'>
                   <ul className="home-list">
-                    <li className="listt">hello!</li>
-                    <li className="listt">I'm Chiluka Rahul</li>
-            
-                    {/* <li className="listt hide">I am Chiluka Rahul</li>/ */}
+                    <li className="listt left-align">YOU’VE GOT</li>
+                    <li className="listt left-align">THE IDEA, GREAT . . .</li>
+                    <li className="listt right-align">LEAVE THE</li>
+                    <li className="listt right-align">REST TO ME !</li>
                   </ul>
+
               </div>
               <div className='hme-list-cnter'>
                 <div className='none'>
@@ -203,32 +211,7 @@ const Home = () => {
           <Skills />
           <Connect />
           <Footer />
-        </div>
-        {/* <section className='infinite-anim'>
-          <div className='infinite-container'>
-            <motion.div
-              animate = {{
-                x:"-50%"
-              }}
-              transition={{
-                duration: 40,
-                ease : 'linear',
-                repeat : Infinity,
-              }}
-              className='bestof-container'>
-              {Array.from({ length: 2 }).map((_, i) => (
-                <Fragment key={i}>
-                  {bestOf.map((item) => (
-                    <h2 key={item.id} className="bestoflist">
-                      {item.name}
-                    </h2>
-                  ))}
-                </Fragment>
-              ))}
-            </motion.div>
-          </div>
-        </section> */}
-        
+        </div>        
     </>
   )
 }

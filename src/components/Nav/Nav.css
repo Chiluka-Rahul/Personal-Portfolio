@@ -7,9 +7,8 @@
     font-optical-sizing: auto;
     position: absolute;
     top: 0;
-    z-index: 3;
+    z-index:3;
     border: 1px solid rgb(154, 153, 153);
-
 }
 
 .nav-side-container {
@@ -78,16 +77,16 @@
     pointer-events: auto;
 
     &:hover {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(225, 225, 225);
 
         .list-square {
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
             transform: scale(1);
             display: block;
         }
 
         a {
-            color: rgb(255, 255, 255);
+            color: rgb(1, 1, 1);
         }
     }
 
@@ -103,71 +102,12 @@
 .list a {
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(9, 9, 9)
+    color: rgb(239, 239, 239)
 }
 
 
 
-/* 
-.headerButtonContainer {
-    transform: scale(0);
-    position: fixed;
-    right: 0px;
-    z-index: 1000;
-    pointer-events: auto;
 
-    .button {
-        position: relative;
-        margin: 10px;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-color: #1C1D20;
-        cursor: pointer;
-        border: 1px solid white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .burger {
-        width: 100%;
-        position: relative;
-        z-index: 1;
-
-        &::after,
-        &::before {
-            content: "";
-            display: block;
-            height: 1.5px;
-            width: 40%;
-            margin: auto;
-            background-color: white;
-            position: relative;
-            transition: transform 0.3s;
-        }
-
-        &::after {
-            top: -5px;
-        }
-
-        &::before {
-            top: 5px;
-        }
-    }
-
-    .burgerActive {
-        &::after {
-            transform: rotate(45deg);
-            top: -1px;
-        }
-
-        &::before {
-            transform: rotate(-45deg);
-            top: 0px;
-        }
-    }
-} */
 .headerButtonContainer {
   transform: scale(0);
   position: fixed;
@@ -199,14 +139,14 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: 1.5px;
+      height: 1.7px;
       background-color: white;
       left: 0;
       transition: transform 0.3s ease, top 0.3s ease;
     }
 
     &::before {
-      top: 2px;
+      top: 4px;
     }
 
     &::after {

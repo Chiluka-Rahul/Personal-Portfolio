@@ -1,12 +1,12 @@
-.headerButtonContainerr{
+/* .headerButtonContainerr{
     position: fixed;
     right: 0px;
     z-index: 400;
     .buttonn{
         position: relative;
         margin: 10px;
-        width: 80px;
-        height: 40px;
+        width: 70px;
+        height: 70px;
         background-color: #1C1D20;
         cursor: pointer;
         display: flex;
@@ -44,6 +44,64 @@
             top: 0px;
         }
     }
+} */
+
+.headerButtonContainerr {
+    position: fixed;
+    right: 0px;
+    z-index: 400;
+
+  .buttonn {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #1C1D20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .burgerr {
+    width: 24px;
+    height: 18px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1.7px;
+      background-color: white;
+      left: 0;
+      transition: transform 0.3s ease, top 0.3s ease;
+    }
+
+    &::before {
+      top: 4px;
+    }
+
+    &::after {
+      top: 100%;
+      transform: translateY(-100%);
+    }
+  }
+
+  .burgerActivee {
+    &::before {
+      transform: rotate(45deg);
+      top: 50%;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      top: 50%;
+    }
+  }
 }
 
 
