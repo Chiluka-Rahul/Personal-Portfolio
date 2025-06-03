@@ -197,8 +197,8 @@ const Contact = () => {
                 <hr className="hor-cont-info" />
                 <div className="contact-address-info">
                   <div className="address-info">Kamareddy, Telangana</div>
-                  <div className="address-info">+91 9390237379</div>
-                  <div className="address-info">rahulchiluka2511@gmail.com</div>
+                  <div className="address-info">+91 9381476757 / +91 9390237379</div>
+                  <div className="address-info">rrrchilukas@gmail.com</div>
                 </div>
               </div>
             </div>

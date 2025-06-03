@@ -36,8 +36,8 @@ const Connect = () => {
         <hr className='hr-connect'/>
         <div className='connect-detail-container'>
           <div className='connect-in-detail'>
-            <p>Email: <span>rahulchiluka2511@gmail.com</span></p>
-            <p>Phone No: <span>+91 9390237379</span></p>
+            <p>Email: <span>rrrchilukas@gmail.com</span></p>
+            <p>Phone No: <span>+91 9381476757 / +91 9390237379</span></p>
           </div>
               <Link to={'/contact'}>
                 <div className='gettouch-button'>
