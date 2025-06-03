@@ -150,7 +150,7 @@ const Home = () => {
                   <ul className="home-list">
                     <div className='home-list-first'>
                       <li className="listt">YOU’VE GOT</li>
-                      <li className="listt">THE IDEA, GREAT . . .</li>
+                      <li className="listt">THE IDEA, GREAT . .</li>
                     </div>
                     <div>
                       <li className="listt small">

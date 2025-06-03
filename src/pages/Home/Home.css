@@ -279,13 +279,15 @@ a{
 }
   
 @media (max-width: 480px){
+  .home-container{
+    height: 100vh;
+  }
 
   .inner-container {
     padding: 0;
   }
-
   .title-home-container{
-    padding-top: 22rem;
+    padding-top: 18rem;
   }
   
   .home-list{
