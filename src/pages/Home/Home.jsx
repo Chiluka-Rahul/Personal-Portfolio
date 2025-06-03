@@ -148,10 +148,16 @@ const Home = () => {
             <div className="inner-container">
               <div className='title-home-container'>
                   <ul className="home-list">
-                    <li className="listt left-align">YOU’VE GOT</li>
-                    <li className="listt left-align">THE IDEA, GREAT . . .</li>
-                    <li className="listt right-align">LEAVE THE</li>
-                    <li className="listt right-align">REST TO ME !</li>
+                    <div className='home-list-first'>
+                      <li className="listt">YOU’VE GOT</li>
+                      <li className="listt">THE IDEA, GREAT . . .</li>
+                    </div>
+                    <div>
+                      <li className="listt small">
+                        - LEAVE THE REST TO ME ! !
+                      </li>
+                    </div>
+
                   </ul>
 
               </div>

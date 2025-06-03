@@ -34,7 +34,7 @@ const skills_list = [
 
 
 
-const Project2 = () => {
+const Project1 = () => {
     const [isActive, setIsActive] = useState(false);
   return (
     <>
@@ -123,4 +123,4 @@ const Project2 = () => {
   )
 }
 
-export default Project2
+export default Project1

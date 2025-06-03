@@ -20,13 +20,11 @@ export const slideUp = {
 }
 
 const AboutParaSec = () => {
-    const aboutPara = `I'm a developer who enjoys turning ideas into digital experiences. I care about clean code, meaningful design, and small details that make a big difference.
+    const aboutPara = `I'm Chiluka Rahul, a developer who enjoys turning ideas into digital experiences. I care about clean code, meaningful design, and small details that make a big difference.
 
 Whether I’m building interfaces, exploring new frameworks, or just experimenting, I’m always learning. I like keeping things minimal, fast, and human.
 
-Outside of coding, you’ll probably find me sketching out new concepts, breaking things just to fix them better, or chasing that “AHA” moment when everything just clicks. 
-
-Currently exploring new ways to bring design and code together — always up for a challenge.
+Currently, exploring new ways to bring design and code together — always up for a challenge.
 `;
   
 
