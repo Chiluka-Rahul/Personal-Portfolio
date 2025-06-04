@@ -67,6 +67,8 @@
         color: rgb(68, 67, 67);
         font-weight: 500;
     }
+}
+
     .serv{
         display: flex;
         flex-direction: column;
@@ -84,7 +86,6 @@
         }
 
     }
-}
 
 
 @media (max-width: 480px) {
