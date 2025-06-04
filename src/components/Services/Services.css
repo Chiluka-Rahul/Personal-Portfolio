@@ -41,6 +41,8 @@
 
 .services{
     display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
     margin-top: 10px;
     /* background-color: rgb(233, 233, 233); */
     /* color: white; */
@@ -52,6 +54,7 @@
     display: inline-flex;
     flex-direction: column;
     margin: 2.5rem;
+    max-width: 100%;
 }
 
 .service-info{
@@ -61,31 +64,34 @@
     padding: 30px;
     border: 1px solid rgb(54, 2, 69);
     border-radius: 20px;
-    .serive-no h3{
-        font-family: 'Work Sans', sans-serif;
-        font-size: 50px;
-        color: rgb(68, 67, 67);
-        font-weight: 500;
-    }
+
 }
 
-    .serv{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        h2{
-            font-size: 40px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            color: black;
-        }
-        p{
-            font-size: 18px;
-            color: rgb(52, 52, 52);
-            font-family: 'Inter', sans-serif;
-        }
+.serive-no h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(68, 67, 67);
+    font-weight: 500;
+}
 
-    }
+.serv{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.serv h2{
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+.serv p{
+
+    font-size: 18px;
+    color: rgb(52, 52, 52);
+    font-family: 'Inter', sans-serif;
+}
 
 
 @media (max-width: 480px) {
