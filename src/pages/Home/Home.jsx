@@ -165,9 +165,9 @@ const Home = () => {
                 <div className='none'>
                   <span></span>
                 </div>
-              <div className='circle-resume'>
+              {/* <div className='circle-resume'>
                 <div className='icon-resume'>
-                  <a href='#' className='link-resume'>
+                  <a href='https://drive.google.com/file/d/1O1PatnrXLM4b4d-wApheSu1WpM7K9ZTB/view?usp=sharing' className='link-resume'>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -196,7 +196,43 @@ const Home = () => {
                 <div className='text-cont-resume'>
                   <p>resume-resume-resume-</p>
                 </div>
-              </div>
+              </div> */}
+              <a
+                href="https://drive.google.com/file/d/1O1PatnrXLM4b4d-wApheSu1WpM7K9ZTB/view?usp=sharing"
+                className="link-resume"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="circle-resume">
+                  <div className="icon-resume">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="size-6"
+                      style={{
+                        width: "30px",
+                        height: "28px",
+                        display: "inline-block",
+                        color: "white"
+                      }}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <div className="text-cont-resume">
+                    <p>resume-resume-resume-</p>
+                  </div>
+                </div>
+              </a>
+
                 <div className='bstof-cont'>
                   <ul className='bestof-container'>
                     {bestOf.map((expert, i) => {

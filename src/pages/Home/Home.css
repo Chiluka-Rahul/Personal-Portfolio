@@ -100,6 +100,10 @@ a{
   color: white;
 }
 
+.link-resume {
+  text-decoration: none;
+  display: inline-block;
+}
 
 .link-resume a{
   color: white;
@@ -111,6 +115,7 @@ a{
   width: 100%;
   height: 100%;
   position: absolute;
+  color: white;
   animation: anim 10s linear infinite;
 }
 
