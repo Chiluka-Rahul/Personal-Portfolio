@@ -10,7 +10,7 @@ import ProjectWorks from "./ProjectWorks"
 const projects = [
   { id: 1, category: "Web Development", title: "AI PDF Note SaaS", src: "ai-pdf-bg.png",url: "https://ai-pdf-note-maker.vercel.app/"  },
   { id: 2, category: "Web Development", title: "NxtTrendz E-commerce" , src: "nxttrendzbg.png",url: "https://github.com/Chiluka-Rahul/nxtTrendZ" },
-  { id: 3, category: "Web Development", title: "Personal Portfolio" , src: "appleclone.png",url: "https://aipdfnote.vercel.app" },
+  { id: 3, category: "Web Development", title: "Personal Portfolio" , src: "personal-portfolio.png",url: "https://personal-portfolio-delta-topaz.vercel.app/" },
   { id: 4, category: "Web Design", title: "EcommWeb" , src: "ecomm-web.png",url: "https://github.com/Chiluka-Rahul/Ecommweb" },
   { id: 5, category: "UI/UX Design", title: "Fresh Price" , src: "freshpricebg.png",url: "https://drive.google.com/file/d/1uTgF5R3og7bzii7g7zkXXUs4XbEgSPVj/view" },
   { id: 6, category: "Web Development", title: "Apple 15 Pro Clone" , src: "appleclone.png",url: "https://github.com/Chiluka-Rahul/apple-Clone" },
