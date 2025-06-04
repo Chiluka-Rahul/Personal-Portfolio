@@ -5,32 +5,32 @@ import "./Projects.css";
 import { Link } from "react-router-dom";
 
 const projects_list = [
-    {
-
-        id: "01",
-        title: "AI PDF Note SaaS",
-        description: "Design & Development",
-        color: "#000000",
-        src: "ai-pdf-bg.png",
-        
-    },
-    {
-        id: "02",
-        title: "Apple Website Clone",
-        description: "Design & Development",
-        color: "#e1e1e1",
-        src: "appleclone.png",
-        
-    },
-    {
-        id: "03",
-        title: "Fresh Price UI",
-        description: "UI/UX Design",
-        color: "#000000",
-        src: "freshpricebg.png", 
-        
-    },
+  {
+    id: "01",
+    title: "AI PDF Note SaaS",
+    description: "Design & Development",
+    color: "#000000",
+    src: "ai-pdf-bg.png",
+    url: "https://ai-pdf-note-maker.vercel.app/",
+  },
+  {
+    id: "02",
+    title: "Apple Website Clone",
+    description: "Design & Development",
+    color: "#e1e1e1",
+    src: "appleclone.png",
+    url: "https://apple15proclone.netlify.app/",
+  },
+  {
+    id: "03",
+    title: "Fresh Price UI",
+    description: "UI/UX Design",
+    color: "#000000",
+    src: "freshpricebg.png",
+    url: "https://drive.google.com/file/d/1uTgF5R3og7bzii7g7zkXXUs4XbEgSPVj/view",
+  },
 ];
+
 
 const Projects = () => {
     const [isHover, setIsHover] = useState(false);
@@ -45,32 +45,26 @@ const Projects = () => {
             <div className="body-container">
                 <Project projects_list = {projects_list}/>
                 <div className="project-mobile-display">
-                    {projects_list.map((l,index) => {
-                        return (
-                            <div key={index} className="project-mobile-container">
-                                <div 
-                                className="project-mobile-card">
-                                    
-                                        <img
-                                            src={`/images/${l.src}`}
-                                            loading="lazy"
-                                            className="project-mobile-image-o"
-                                            alt={`image-${index}`}
-                                        />
-                                        <div className="project-mobile-col-0">
-                                            <h3 className="project-mobile-title-o">
-                                                {l.title}
-                                            </h3>
-                                            <hr className="hr-pr-mobile" />
-                                            <span className="desc-span-mobile">{l.description}</span>    
-
+                    {projects_list.map((l, index) => (
+                        <div key={index} className="project-mobile-container">
+                            <a href={l.url} target="_blank" rel="noopener noreferrer">
+                            <div className="project-mobile-card">
+                                <img
+                                src={`/images/${l.src}`}
+                                loading="lazy"
+                                className="project-mobile-image-o"
+                                alt={`image-${index}`}
+                                />
+                                <div className="project-mobile-col-0">
+                                <h3 className="project-mobile-title-o">{l.title}</h3>
+                                <hr className="hr-pr-mobile" />
+                                <span className="desc-span-mobile">{l.description}</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        ))}
                                         </div>
-                                      
-                                </div>    
-                            </div>    
-                        )
-                    })}
-                </div>
 
                 <div className="view-button">
                     <Link to={"/projectFilter"}>

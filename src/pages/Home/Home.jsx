@@ -198,7 +198,7 @@ const Home = () => {
                 </div>
               </div> */}
               <a
-                href="https://drive.google.com/file/d/1O1PatnrXLM4b4d-wApheSu1WpM7K9ZTB/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/1SG8RV6QOxBhxoh0WPxrziy1XuxiFl0uW?usp=sharing"
                 className="link-resume"
                 target="_blank"
                 rel="noopener noreferrer"
