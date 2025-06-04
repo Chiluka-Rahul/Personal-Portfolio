@@ -16,8 +16,8 @@ const projects = [
   { id: 6, category: "Web Development", title: "Apple 15 Pro Clone" , src: "appleclone.png",url: "https://github.com/Chiluka-Rahul/apple-Clone" },
   { id: 7, category: "UI/UX Design", title: "LinkedIn Redesign " , src: "linkedinbg.png",url: "https://www.behance.net/rahulchiluka" },
   { id: 8, category: "Web Design", title: "Responsive Portfolio" , src: "ResponsivePortfolio.png",url: "https://chiluka-rahul.github.io/Portfolio/" },
-  { id: 9, category: "Web Development", title: "Restaurant App" , src: "appleclone.png",url: "https://aipdfnote.vercel.app" },
-  { id: 10, category: "Web Development", title: "User Management System" , src: "usermanagementbg.png",url: "https://github.com/Chiluka-Rahul/user-management-project" },
+  // { id: 9, category: "Web Development", title: "Restaurant App" , src: "appleclone.png",url: "https://aipdfnote.vercel.app" },
+  { id: 9, category: "Web Development", title: "User Management System" , src: "usermanagementbg.png",url: "https://github.com/Chiluka-Rahul/user-management-project" },
 ];
 
 const categories = ["All", "Web Development", "Web Design", "UI/UX Design"];
